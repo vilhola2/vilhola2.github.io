@@ -4,15 +4,9 @@
 }
 
 @keyframes background-gradient {
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 body {
@@ -43,7 +37,6 @@ body {
     border: 2px solid #000000;
     padding: 30px;
     margin: 15px;
-
     * {
         font-family: 'Reem Kufi Fun', sans-serif;
     }
