@@ -1,8 +1,13 @@
+@font-face {
+    font-family: mogus;
+    src: url("./AmongUs-Regular.ttf");
+}
+
 .logo-container {
     display: flex;
     background-color: aqua;
     align-items: center;
 }
 #logo-text {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: mogus;
 }
