@@ -3,11 +3,36 @@
     src: url("./BubblegumSans-Regular.ttf");
 }
 
-.logo-container {
-    display: flex;
-    background-color: aqua;
-    align-items: center;
+@keyframes background-gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
+
+body {
+    margin: 0px;
+}
+
+.logo-container {
+    padding: 5px;
+    display: flex;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    align-items: center;
+    animation: background-gradient 15s ease infinite;
+    * {
+        margin: 0px 10px;
+    }
+}
+
 #logo-text {
     font-family: bubblegumsans;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px rgba(#000000, .75);
 }
