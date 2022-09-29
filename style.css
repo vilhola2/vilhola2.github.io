@@ -58,4 +58,41 @@ body {
 .content * {
   font-family: "Reem Kufi Fun", sans-serif;
 }
+
+.content-list {
+  list-style-image: url("./arrow.svg");
+}
+.content-list li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.content-list li > ::before {
+  content: "";
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: linear-gradient(-45deg, #a9604a, #802145, #14617d, #136f59);
+  background-size: 400% 400%;
+  -webkit-animation: background-gradient 15s ease infinite;
+          animation: background-gradient 15s ease infinite;
+  -webkit-mask-image: url("./arrow.svg");
+          mask-image: url("./arrow.svg");
+  margin-right: 10px;
+  background-position: center center;
+  vertical-align: middle;
+}
+.content-list li * {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: background-gradient 15s ease infinite;
+          animation: background-gradient 15s ease infinite;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 0.25s;
+}
+.content-list li * :hover {
+  color: #000000;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
