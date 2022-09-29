@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB","file":"style.css","sourcesContent":[".logo-container {\n  display: flex;\n  background-color: aqua;\n  align-items: center;\n}\n\n/*# sourceMappingURL=file:///c:/xampp/htdocs/vilhola%20website/website/style.css.map */"]}
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;ACCJ;;ADCA;EACI,oBAAA;ACEJ","file":"style.css"}
