@@ -2,10 +2,6 @@
   font-family: louisgeorgecafe;
   src: url("./Louis George Cafe.ttf");
 }
-@font-face {
-  font-family: quick;
-  src: url("./Quick.ttf");
-}
 @-webkit-keyframes background-gradient {
   0% {
     background-position: 0% 50%;
@@ -58,5 +54,8 @@ body {
   border: 2px solid #000000;
   padding: 30px;
   margin: 15px;
+}
+.content * {
+  font-family: "Reem Kufi Fun", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
