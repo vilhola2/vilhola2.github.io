@@ -116,8 +116,8 @@ function update(deltaTime) {
     scoreText.text = `Pisteet: ${score}`
     if (gameOver) {
         if (keysPressed[KeyCodes.Space]) {
-            for (var i = stage.children.length - 1; i >= 0; i--) {
-                stage.removeChild(stage.children[i])
+            for (var i = app.stage.children.length - 1; i >= 0; i--) {
+                app.stage.removeChild(app.stage.children[i])
             }
             start()
         }
@@ -210,7 +210,12 @@ function update(deltaTime) {
 // -------------------
 
 window.onload = () => {
-    app = new PIXI.Application({ width: canvasWidth, height: canvasHeight })
+    app = new PIXI.Application({
+        width: canvasWidth, height: canvasHeight,
+        resolution: window.devicePixelRatio || 1,
+        autoDensity: true,
+        resizeTo: document.querySelector('.pixi-container'),
+        antialias: true})
     document.body.appendChild(app.view)
 
     start()
