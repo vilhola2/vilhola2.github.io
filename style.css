@@ -47,6 +47,12 @@ body {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
 }
 
+#epicgamer {
+  font-family: louisgeorgecafe;
+  color: #FFFFFF;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+}
+
 .content {
   font-family: quick;
   background-color: #ffffff;
@@ -94,5 +100,4 @@ body {
 .content-list li * :hover {
   color: #000000;
   text-decoration: underline;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
