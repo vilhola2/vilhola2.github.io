@@ -71,6 +71,12 @@ body {
   max-width: fit-content;
   list-style: none;
 }
+.games-list * {
+  color: #404040;
+  font-family: louisgeorgecafe;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 
 .content {
   font-family: quick;
@@ -119,5 +125,4 @@ body {
 .content-list li * :hover {
   color: #000000;
   text-decoration: underline;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

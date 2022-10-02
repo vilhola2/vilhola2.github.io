@@ -55,11 +55,17 @@ body {
     text-align: center;
 }
 
-.games-list {
+.games-list { 
     margin: auto;
     padding-left: 0px;
     max-width: fit-content;
     list-style: none;
+    * {
+        color: #404040;
+        font-family: louisgeorgecafe;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
 }
 
 .content {
