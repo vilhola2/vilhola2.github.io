@@ -1,6 +1,9 @@
 let input
 const darkThemeId = "darkTheme"
 
+let darkTheme = Cookies.get("darkTheme") == "true" ? true : false
+setDarkTheme(darkTheme)
+
 function setDarkTheme(isEnabled) {
     if (isEnabled) {
         if (!document.getElementById(darkThemeId)) {
@@ -24,9 +27,6 @@ function setDarkTheme(isEnabled) {
 }
 
 window.onload = () => {
-    let darkTheme = Cookies.get("darkTheme") == "true" ? true : false
-    setDarkTheme(darkTheme)
-
     const themeDiv = document.createElement("div");
     themeDiv.setAttribute("class", "theme-chooser");
 
