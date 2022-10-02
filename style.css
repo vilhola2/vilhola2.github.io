@@ -76,6 +76,28 @@ body {
   font-family: louisgeorgecafe;
   font-weight: bold;
   font-size: 1.5rem;
+  font-style: italic;
+  text-decoration: none;
+  padding: 5px;
+}
+.games-list * span ::before {
+  content: ">> ";
+}
+.games-list * span ::after {
+  content: " <<";
+}
+.games-list * span ::before, .games-list * span ::after {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bolder;
+}
+.games-list * a {
+  transition: 0.25s;
+}
+.games-list * a:hover {
+  color: #23a6d5;
+  text-shadow: 0 0 5px rgba(140, 181, 196, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .content {
@@ -125,4 +147,5 @@ body {
 .content-list li * :hover {
   color: #000000;
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
