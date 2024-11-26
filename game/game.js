@@ -46,7 +46,7 @@ function isColliding(ab, bb) {
 
 // --- game logic ---
 function start() {
-    background = PIXI.Sprite.from('./game/bg.jpeg')
+    background = PIXI.Sprite.from('bg.jpeg')
     background.width = canvasWidth
     background.height = canvasHeight
     app.stage.addChild(background)
@@ -57,7 +57,7 @@ function start() {
     darkMask.endFill()
     app.stage.addChild(darkMask)
 
-    player = PIXI.Sprite.from('./game/player.png')
+    player = PIXI.Sprite.from('player.png')
     player.height = 50
     player.width = 50
     player.x = canvasWidth / 2 - player.width / 2
@@ -149,7 +149,7 @@ function update(deltaTime) {
     }
 
     if (Date.now() - lastEnemySpawn > enemySpawnCooldown) {
-        let enemy = PIXI.Sprite.from('./game/enemy.png')
+        let enemy = PIXI.Sprite.from('enemy.png')
         enemy.width = 25
         enemy.height = 40
         let side = Math.floor(Math.random() * 4)

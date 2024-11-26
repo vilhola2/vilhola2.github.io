@@ -1,17 +1,10 @@
 @font-face {
-  font-family: louisgeorgecafe;
-  src: url("./Louis George Cafe.ttf");
+  font-family: tritillium-regular;
+  src: url("./fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
 }
-@-webkit-keyframes background-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@font-face {
+  font-family: tritillium-bold;
+  src: url("./fonts/Titillium_Web/TitilliumWeb-Bold.ttf");
 }
 @keyframes background-gradient {
   0% {
@@ -24,27 +17,63 @@
     background-position: 0% 50%;
   }
 }
-body {
-  margin: 0px;
+.home-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-.logo-container {
-  padding: 5px;
-  display: flex;
+.navbar-container {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  align-items: center;
-  -webkit-animation: background-gradient 15s ease infinite;
-          animation: background-gradient 15s ease infinite;
-}
-.logo-container * {
-  margin: 0px 10px;
+  animation: background-gradient 15s ease infinite;
+  width: 100%;
+  padding: 12px 0;
 }
 
-#logo-text {
-  font-family: louisgeorgecafe;
+.navbar-container-inner {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
   color: #FFFFFF;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+  font-family: tritillium-bold;
+}
+
+.seperator {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: default;
+  width: 5px;
+  height: 40px;
+  margin: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+  display: inline-block;
+}
+
+.logo-text {
+  font-size: 42px;
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 6px;
+  margin: 0 16px;
+}
+
+.navbar-buttons {
+  font-size: 36px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar-buttons:hover {
+  text-shadow: 0 0 3px #FFFFFF;
+}
+
+.navbar-buttons:active {
+  text-shadow: 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF;
 }
 
 #gaming-body {
@@ -70,14 +99,13 @@ body {
 .games-list {
   margin: auto;
   padding-left: 0px;
-  max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   list-style: none;
 }
 .games-list * {
   color: #404040;
-  font-family: louisgeorgecafe;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   font-style: italic;
@@ -130,8 +158,7 @@ body {
   width: 1.25rem;
   background: linear-gradient(-45deg, #a9604a, #802145, #14617d, #136f59);
   background-size: 400% 400%;
-  -webkit-animation: background-gradient 15s ease infinite;
-          animation: background-gradient 15s ease infinite;
+  animation: background-gradient 15s ease infinite;
   -webkit-mask-image: url("./arrow.svg");
           mask-image: url("./arrow.svg");
   margin-right: 10px;
@@ -141,8 +168,7 @@ body {
 .content-list li * {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  -webkit-animation: background-gradient 15s ease infinite;
-          animation: background-gradient 15s ease infinite;
+  animation: background-gradient 15s ease infinite;
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -219,5 +245,4 @@ body {
 }
 .theme-chooser .slider.round:before {
   border-radius: 50%;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

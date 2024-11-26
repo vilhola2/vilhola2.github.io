@@ -1,6 +1,12 @@
 @font-face {
-    font-family: louisgeorgecafe;
-    src: url("./Louis George Cafe.ttf");
+    font-family: tritillium-regular;
+    src: url("./fonts/Titillium_Web/TitilliumWeb-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: tritillium-bold;
+    src: url("./fonts/Titillium_Web/TitilliumWeb-Bold.ttf");
 }
 
 @keyframes background-gradient {
@@ -9,31 +15,68 @@
 	100% { background-position: 0% 50%; }
 }
 
-body {
-    margin: 0px;
+.home-body {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.logo-container {
-    padding: 5px;
-    display: flex;
+.navbar-container {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    align-items: center;
     animation: background-gradient 15s ease infinite;
-    * {
-        margin: 0px 10px;
-    }
+    width: 100%;
+    padding: 12px 0;
 }
 
-#logo-text {
-    font-family: louisgeorgecafe;
+.navbar-container-inner {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     color: #FFFFFF;
-    text-shadow: 0 0 15px rgba(#000000, .75);
+    text-shadow: 0 0 12px rgba(#000000, .75);
+    font-family: tritillium-bold;
+}
+
+.seperator {
+    user-select: none;
+    cursor: default;
+    width: 5px;
+    height: 40px;
+    margin: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 12px rgba(#000000, .75);
+    display: inline-block;
+}
+
+.logo-text {
+    font-size: 42px;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 6px;
+    margin: 0 16px;
+}
+
+.navbar-buttons {
+    font-size: 36px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar-buttons:hover {
+    text-shadow: 0 0 3px #FFFFFF;
+}
+
+.navbar-buttons:active {
+    text-shadow: 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF, 0 0 12px #FFFFFF;   
 }
 
 #gaming-body {
     background-color: #B0B0B0;
 }
+
+
 
 #epicgamer {
     text-transform: uppercase;
@@ -66,7 +109,7 @@ body {
     list-style: none;
     * {
         color: #404040;
-        font-family: louisgeorgecafe;
+        font-family: sans-serif;
         font-weight: bold;
         font-size: 1.5rem;
         font-style: italic;
